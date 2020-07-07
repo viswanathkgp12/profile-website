@@ -1,26 +1,34 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Link } from "react-router-dom";
 
 const getFooterYear = () => new Date().getFullYear();
 
+const rainbowCSS = `background-color: #222;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+  text-shadow: 3px 3px 0 rgb(217, 31, 38), 5px 5px 0 rgb(226, 91, 14), 7px 7px 0 rgb(245, 221, 8), 9px 9px 0 rgb(5, 148, 68), 11px 11px 0 rgb(2, 135, 206), 13px 13px 0 rgb(4, 77, 145), 15px 15px 0 rgb(42, 21, 113)
+  `;
+
+const logToConsole = () => console.log("%c Hire Me!!!", rainbowCSS);
+
 class Footer extends React.PureComponent {
+  componentDidMount() {
+    logToConsole();
+  }
+
   render() {
     return (
-      <Container id="footer">
-        <Row>
-          <Col md={4}></Col>
-          <Col md={4}>
-            <span>&copy; {getFooterYear()} |</span>
+      <footer className="footer">
+        <div className="footer__inner">
+          <div className="footer__content">
+            <span>&copy; &nbsp; {getFooterYear()}</span>
             <span>
-              <Link to="/">viswanathkgp12.herokuapp.com</Link>
+              <a href="/">viswanathkgp12.herokuapp.com</a>
             </span>
-          </Col>
-          <Col md={4}></Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </footer>
     );
   }
 }
