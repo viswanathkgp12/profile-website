@@ -1,9 +1,6 @@
 import React from "react";
 
 class Header extends React.Component {
-  constructor(props: Readonly<{}>) {
-    super(props);
-  }
 
   private getTheme =
     window.localStorage && window.localStorage.getItem("theme");

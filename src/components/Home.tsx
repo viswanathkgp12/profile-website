@@ -83,7 +83,7 @@ export class Home extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Docker"
-                ></a>
+                >Docker</a>
                 &nbsp;&nbsp;
               </div>
             </div>
