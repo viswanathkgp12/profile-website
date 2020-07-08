@@ -1,3 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/67079257-56e9-4a3d-991d-62c63787da17/deploy-status)](https://app.netlify.com/sites/viswanathkgp12/deploys)
+
+Portfolio Website with react, server side rendering(SSR). Powered by netlify.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
