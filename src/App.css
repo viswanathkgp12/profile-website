@@ -237,6 +237,10 @@ html {
 *:after {
   box-sizing: inherit;
 }
+html {
+  background-color: #fff; /* Default light theme background */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -245,7 +249,6 @@ body {
   font-display: auto;
   font-size: 1rem;
   line-height: 1.54;
-  background-color: #fff;
   color: #222;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -264,6 +267,10 @@ body {
 .dark-theme {
   background-color: #292a2d;
   color: #a9a9b3;
+}
+
+.dark-theme html {
+  background-color: #292a2d; /* Dark theme background for html */
 }
 h2,
 h3,

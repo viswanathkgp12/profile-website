@@ -1,34 +1,43 @@
 import React from "react";
 
-class Header extends React.Component {
+interface HeaderState {
+  isDark: boolean;
+}
 
-  private getTheme =
-    window.localStorage && window.localStorage.getItem("theme");
-  private isDark = this.getTheme === "dark";
+class Header extends React.Component<{}, HeaderState> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      isDark: (window.localStorage && window.localStorage.getItem("theme")) === "dark",
+    };
+  }
+
+  componentDidMount() {
+    this.applyTheme(this.state.isDark);
+  }
+
+  applyTheme = (isDark: boolean) => {
+    const metaThemeColor: any = document.querySelector("meta[name=theme-color]");
+    const app = document.getElementById("App");
+
+    if (app) {
+      if (isDark) {
+        app.classList.add("dark-theme");
+        metaThemeColor?.setAttribute("content", "#252627");
+      } else {
+        app.classList.remove("dark-theme");
+        metaThemeColor?.setAttribute("content", "#fafafa");
+      }
+    }
+    window.localStorage && window.localStorage.setItem("theme", isDark ? "dark" : "light");
+  };
 
   toggleTheme = () => {
-    console.log("Toggling ...");
-    const metaThemeColor: any = document.querySelector(
-      "meta[name=theme-color]"
-    );
-
-    const app = document.getElementById("App");
-    if (this.getTheme !== null) {
-      app?.classList.toggle("dark-theme", this.isDark);
-      this.isDark
-        ? metaThemeColor.setAttribute("content", "#252627")
-        : metaThemeColor.setAttribute("content", "#fafafa");
-    }
-    app?.classList.toggle("dark-theme");
-    window.localStorage &&
-      window.localStorage.setItem(
-        "theme",
-        app?.classList.contains("dark-theme") ? "dark" : "light"
-      );
-    app?.classList.contains("dark-theme")
-      ? metaThemeColor.setAttribute("content", "#252627")
-      : metaThemeColor.setAttribute("content", "#fafafa");
-    return;
+    this.setState((prevState) => {
+      const newIsDark = !prevState.isDark;
+      this.applyTheme(newIsDark);
+      return { isDark: newIsDark };
+    });
   };
 
   render() {
@@ -37,7 +46,7 @@ class Header extends React.Component {
         <span className="header__inner">
           <a href="." style={{ textDecoration: "none" }}>
             <div className="logo">
-              <span className="logo__mark">&gt;</span>
+              <span className="logo__mark">{'>'}</span>
               <span className="logo__text">/home</span>
               <span className="logo__cursor"></span>
             </div>
