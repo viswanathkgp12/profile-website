@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const resume = require("../static/media/resume.pdf");
 
@@ -14,10 +14,9 @@ export class About extends React.Component {
         <h1>About Me</h1>
         <p>
           <span style={{ textAlign: "center" }}>
-            Blockchain Developer with 3 years of experience in software
-            development primarily focused on building wallets and DApps. Strong
-            academic background with a Bachelor of Technology from IIT
-            Kharagpur.
+            Seasoned developer with 7+ years of experience in the software industry.
+            Specializes in backend development leveraging technologies like NodeJS/Typescript, Python, Ruby On Rails.
+            Strong academic background with a Bachelor of Technology from IIT Kharagpur.
           </span>
           <br />
           <br />

@@ -48,9 +48,9 @@ class Header extends React.Component {
                 <li>
                   <a href="/#about">About</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="./posts">Posts</a>
-                </li>
+                </li> */}
               </ul>
             </nav>
             <span className="menu-trigger">

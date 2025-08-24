@@ -1,5 +1,5 @@
-import React from "react";
 import { About } from "./About";
+import React from "react";
 
 export class Home extends React.Component {
   render() {
@@ -9,7 +9,7 @@ export class Home extends React.Component {
           <main>
             <div>
               <h1>Viswanath Kapavarapu</h1>
-              <p>Blockchain Developer</p>
+              <p>Backend Engineer</p>
               <div>
                 &nbsp;
                 <a
@@ -79,11 +79,25 @@ export class Home extends React.Component {
                 </a>
                 &nbsp;&nbsp;
                 <a
-                  href="https://hub.docker.com/u/vishy12"
+                  href="https://x.com/viswanath_12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="Docker"
-                >Docker</a>
+                  title="Twitter"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c11 3 21-1 21-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </a>
                 &nbsp;&nbsp;
               </div>
             </div>

@@ -1,5 +1,4 @@
 import React from "react";
-
 import { coloredConsoleLog } from "../../utils/logging";
 
 const getFooterYear = () => new Date().getFullYear();
@@ -18,7 +17,7 @@ class Footer extends React.PureComponent {
           <div className="footer__content">
             <span>&copy; &nbsp; {getFooterYear()}</span>
             <span>
-              <a href="/">viswanathkgp12.herokuapp.com</a>
+              <a href="/">viswanathkgp12.netlify.app</a>
             </span>
           </div>
         </div>
