@@ -12,12 +12,13 @@ class Footer extends React.PureComponent {
 
   render() {
     return (
-      <footer className="footer">
+      <footer className="footer" role="contentinfo">
         <div className="footer__inner">
           <div className="footer__content">
-            <span>&copy; &nbsp; {getFooterYear()}</span>
+            <span>&copy; {getFooterYear()} Viswanath Kapavarapu</span>
+            <span aria-hidden="true">•</span>
             <span>
-              <a href="/">viswanathkgp12.netlify.app</a>
+              <a href="/" aria-label="Home page">viswanathkgp12.netlify.app</a>
             </span>
           </div>
         </div>

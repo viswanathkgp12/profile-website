@@ -10,7 +10,7 @@ import React from "react";
 function App() {
   return (
     <Router basename="">
-      <div id="App" className="dark-theme">
+      <div id="App">
         <div className="container">
           <Header />
           <Switch>
