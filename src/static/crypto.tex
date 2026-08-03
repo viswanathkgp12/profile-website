@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in Latex - Web3 / Protocol & Blockchain Senior Engineer
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.90,lf]{FiraMono}
+
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\
+      \textit{#3} & {\color{dark-grey} \small #4}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Viswanath K} \\ \vspace{5pt}
+    \small \faPhone* \texttt{+91-8639855513} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{vishy0108@gmail.com} \hspace{1pt} $|$
+    \hspace{1pt} \faLinkedin \hspace{2pt} \texttt{\href{https://www.linkedin.com/in/viswanath-k-5852a3143/}{LinkedIn}} \hspace{1pt} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Bengaluru, India}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+  \small{Senior Blockchain \& Protocol Engineer with 9+ years of experience building institutional custody systems, multi-chain smart contracts, and cryptographic wallet infrastructure. Author of \textbf{TZIP-24} (Tezos meta-transaction standard) and global Rank 28 finalist in Paradigm CTF. Specialized in HSM integration (Thales nShield), EVM/Solana/Tezos smart contracts, and fault-tolerant Web3 backend architecture.}
+
+%-----------SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Blockchain Protocols} {: Ethereum, Solana, Tezos, Bitcoin, Litecoin, EOS, Stellar, Chainlink Oracles} \vspace{2pt} \\
+     \textbf{Smart Contracts \& Languages} {: Solidity, SmartPy, Truffle, Python, Node.js, JavaScript, Ruby on Rails} \vspace{2pt} \\
+     \textbf{Security \& Cryptography} {: Multi-Signature Wallets, HSM (Thales nShield Connect), Key Management, TZIP-24, CTF Auditing} \vspace{2pt} \\
+     \textbf{Backend \& Cloud Infra} {: FastAPI, Faust, NestJS, Django, PostgreSQL, Dune Platform, AWS (EKS), Docker, Kafka}
+    }}
+ \end{itemize}
+
+%-----------ACCOMPLISHMENTS & PROTOCOL WORK-----------
+\section{PROTOCOL STANDARDS \& ACCOMPLISHMENTS}
+ \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Protocol Standardization -- TZIP-24}} {2020}
+      \resumeItemListStart
+        \resumeItem{Drafted and published \textbf{TZIP-24}, defining the official Tezos standard for meta-transactions and gasless execution.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Paradigm CTF -- Rank 28 Globally}} {Feb. 2021}
+      \resumeItemListStart
+        \resumeItem{Ranked 28th globally competing solo (Team Goldenn) in world-class smart contract auditing and protocol security challenges.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Coinlist Tezos Hackathon -- \$5,000 Winner}} {Jul. 2020}
+      \resumeItemListStart
+        \resumeItem{Architected the backend for a decentralized auction platform enabling configurable smart contract auction formats.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Open Source Core Contributions}} {Various}
+      \resumeItemListStart
+        \resumeItem{Submitted protocol patches and pull requests to core Web3 repositories: \textbf{web3.js}, \textbf{bitcore}, \textbf{moneybutton/bsv}, and \textbf{conseiljs}.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Hackathons (Chainlink \& Proffer)}} {2017 -- 2020}
+      \resumeItemListStart
+        \resumeItem{Engineered decentralized prediction markets using Chainlink Price Feeds (BTC/USDT); Proffer Hackathon Finalist for supply chain provenance.}
+      \resumeItemListEnd
+
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Propine}{2020 -- 2022}
+      {Senior Software Engineer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected institutional asset custody infrastructure securing \textbf{\$10M+ in assets under custody} with enterprise API endpoints.}
+        \resumeItem{Engineered a generic, multi-chain wallet abstraction layer standardizing cross-chain deposit/withdrawal workflows.}
+        \resumeItem{Integrated Ethereum and Solana token flows with automated, stateful retry mechanisms to eliminate dropped transactions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Self-Employed}{2020}
+      {Web3 Consultant / Contractor}{Remote}
+      \resumeItemListStart
+        \resumeItem{Implemented a generic gasless transaction layer using SmartPy and Node.js utilizing the TZIP-24 meta-transaction standard.}
+        \resumeItem{Engineered SQL analytics dashboards on the Dune platform for DHedge DeFi to track liquidity pool performance.}
+        \resumeItem{Partnered with KoineArth to design and deploy their NFT storage layer and backend infrastructure on Tezos.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Onsa}{Nov. 2018 -- May 2020}
+      {Backend Engineer}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Built backend systems for cryptocurrency exchange wallets supporting Bitcoin, Litecoin, Ethereum, EOS, and Stellar.}
+        \resumeItem{Developed async microservices managing multi-signature wallet logic and integrated \textbf{Thales nShield Connect HSM} for cryptographic key signing.}
+        \resumeItem{Provisioned and maintained blockchain nodes across mainnet and testnet environments with automated monitoring.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SpotOn}{Oct. 2025 -- Present}
+      {Lead Software Engineer}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Architected merchant micro-finance payment engines handling \textbf{\$40M+ in monthly volume} across \textbf{35k+ merchants}.}
+        \resumeItem{Designed automated real-time net-settlement engines and mentored a core engineering team of 4 backend developers.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Zeonlab}{Jun. 2017 -- Nov. 2018}
+      {Blockchain Backend Engineer}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Implemented smart contracts in Solidity (Truffle) for trade finance (letters of credit) and digital academic credential verification.}
+        \resumeItem{Built Django REST APIs connecting legacy corporate backends to decentralized smart contract layers.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IIT Kharagpur}{2012 -- 2017}
+      {BTech + Integrated MTech in Chemical Engineering}{Kharagpur, West Bengal}
+  \resumeSubHeadingListEnd
+
+\end{document}

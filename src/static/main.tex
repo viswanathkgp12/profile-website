@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex - Generalist / FAANG Staff Backend Engineer
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.90,lf]{FiraMono}
+
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\
+      \textit{#3} & {\color{dark-grey} \small #4}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Viswanath K} \\ \vspace{5pt}
+    \small \faPhone* \texttt{+91-8639855513} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{vishy0108@gmail.com} \hspace{1pt} $|$
+    \hspace{1pt} \faLinkedin \hspace{2pt} \texttt{\href{https://www.linkedin.com/in/viswanath-k-5852a3143/}{LinkedIn}} \hspace{1pt} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Bengaluru, India}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+  \small{Staff Backend Engineer with 9+ years of experience architecting resilient, distributed financial infrastructure and high-throughput microservices handling \$40M+ in monthly transaction volume. Technical leader with proven experience managing backend teams, operating cloud-native systems (AWS EKS, Kafka, Kubernetes), and engineering fault-tolerant data streaming pipelines for 35k+ active merchants.}
+
+%-----------SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Cloud \& Infrastructure} {: AWS (EC2, EKS), Kubernetes, Docker, Terraform, CI/CD Pipelines, Linux Node Administration} \vspace{2pt} \\
+     \textbf{Distributed Systems \& Data} {: Microservices Architecture, Event-Driven Streaming (Kafka, Faust), Redis, PostgreSQL, ETL Pipelines, RESTful APIs} \vspace{2pt} \\
+     \textbf{Languages} {: Python, Node.js, JavaScript, Ruby on Rails, SQL} \vspace{2pt} \\
+     \textbf{Frameworks \& Libraries} {: FastAPI, Faust, NestJS, Django, Truffle} \vspace{2pt} \\
+     \textbf{Security \& Cryptography} {: Multi-Signature Systems, HSM (Thales nShield Connect), Cryptographic Protocol Design}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SpotOn}{Oct. 2025 -- Present}
+      {Lead Software Engineer}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Architected core micro-finance payment engines handling \textbf{\$40M+ in monthly processing volume} for \textbf{10k+ merchants} on SpotOn Lite and \textbf{25k+ merchants} on SpotOn Capital.}
+        \resumeItem{Designed real-time automated net-settlement processing infrastructure calculating variable daily revenue-share payouts.}
+        \resumeItem{Consolidated multi-processor payment streams into unified high-availability accounting ledgers deployed on AWS EKS using Terraform.}
+        \resumeItem{Directly mentor a team of 4 backend engineers, directing architectural reviews, system design practices, and CI/CD quality standards.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SpotOn}{Mar. 2021 -- Sept. 2025}
+      {Software Engineer}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Engineered fault-tolerant POS payment microservices in FastAPI, Faust, Kafka, and NestJS, maintaining strict uptime SLAs.}
+        \resumeItem{Built scalable PostgreSQL analytics ETL pipelines streaming daily, weekly, and monthly financial summaries for 35k+ merchants.}
+        \resumeItem{Refactored legacy backend monoliths into Dockerized Kubernetes services on AWS, eliminating single points of failure.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Propine}{2020 -- 2022}
+      {Senior Software Engineer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected institutional-grade asset custody platform securing \textbf{\$10M+ in assets under custody} via enterprise REST APIs.}
+        \resumeItem{Designed a unified multi-protocol abstraction layer for asynchronous transaction handling with automated exponential backoff retries.}
+        \resumeItem{Maintained core Ruby on Rails backend services while driving technical documentation and team knowledge-sharing sessions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Self-Employed}{2020}
+      {Consulting Engineer / Contractor}{Remote}
+      \resumeItemListStart
+        \resumeItem{Authored \textbf{TZIP-24}, establishing an open protocol specification for delegated, gasless execution in distributed networks.}
+        \resumeItem{Engineered Node.js backend middleware for gasless transaction execution and custom Dune Analytics data models for DHedge DeFi.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Onsa}{Nov. 2018 -- May 2020}
+      {Backend Engineer}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Built asynchronous microservices and RESTful APIs managing multi-signature digital asset wallets across high-concurrency environments.}
+        \resumeItem{Integrated Hardware Security Modules (Thales nShield Connect HSM) to execute high-assurance cryptographic key signing operations.}
+        \resumeItem{Provisioned resilient node networks across mainnet and testnet environments with automated telemetry and health monitoring.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Zeonlab}{Jun. 2017 -- Nov. 2018}
+      {Backend Engineer}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Engineered Django REST APIs connecting enterprise trade finance systems (letters of credit, purchase orders) to immutable ledgers.}
+        \resumeItem{Developed provable digital verification platforms for academic and professional credential tracking.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------ACCOMPLISHMENTS-----------
+\section{ACCOMPLISHMENTS}
+ \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Paradigm CTF -- Rank 28 Globally}} {Feb. 2021}
+      \resumeItemListStart
+        \resumeItem{Placed 28th worldwide competing solo (Team Goldenn) in advanced system security, protocol exploitation, and algorithmic challenges.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Protocol Standardization (TZIP-24)}} {2020}
+      \resumeItemListStart
+        \resumeItem{Authored the official ecosystem specification for meta-transactions on Tezos, adopted ecosystem-wide for delegated executions.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Coinlist Hackathon Winner (\$5,000 Prize)}} {Jul. 2020}
+      \resumeItemListStart
+        \resumeItem{Engineered the high-throughput backend architecture for a decentralized auction framework.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Open Source Core Contributions}} {Various}
+      \resumeItemListStart
+        \resumeItem{Contributed core features and bug fixes to widely used open-source libraries including \textbf{web3.js}, \textbf{bitcore}, and \textbf{conseiljs}.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Hackathon Recognition (Chainlink \& Proffer)}} {2017 -- 2020}
+      \resumeItemListStart
+        \resumeItem{Built decentralized prediction market systems integrating Chainlink price oracle feeds; Named Finalist at Proffer Hackathon.}
+      \resumeItemListEnd
+
+ \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IIT Kharagpur}{2012 -- 2017}
+      {BTech + Integrated MTech in Chemical Engineering}{Kharagpur, West Bengal}
+  \resumeSubHeadingListEnd
+
+\end{document}
