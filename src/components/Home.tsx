@@ -7,8 +7,12 @@ export class Home extends React.Component {
       <div className="home-wrapper">
         <section className="content hero-section">
           <main>
-            <h1>Viswanath Kapavarapu</h1>
-            <p className="subtitle">Lead Backend Engineer</p>
+            <h1>
+              Viswanath Kapavarapu
+              <span className="subtitle" style={{ display: 'block', fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 300, color: 'var(--text-muted)' }}>
+                Lead Backend Engineer
+              </span>
+            </h1>
             <nav className="social-links" aria-label="Social Profiles">
               <a
                 href="mailto:viswanath.iit@gmail.com"

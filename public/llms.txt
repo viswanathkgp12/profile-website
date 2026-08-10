@@ -1,0 +1,13 @@
+# Viswanath Kapavarapu
+
+> Lead Backend Engineer & Web3 Specialist
+
+## About Me
+Staff Backend & Web3 Engineer with 9+ years of experience architecting resilient financial infrastructure, institutional custody systems, and high-throughput microservices handling $40M+ in monthly volume. 
+
+Technical leader with expertise in cloud-native systems (AWS EKS, Kafka, Kubernetes), smart contracts, and cryptographic wallet infrastructure. Proven track record managing backend teams and contributing to core protocol standards like TZIP-24. Strong academic background with an Integrated B.Tech + M.Tech from IIT Kharagpur.
+
+## Links
+- LinkedIn: https://www.linkedin.com/in/viswanath-kapavarapu-5852a3143
+- Github: https://github.com/viswanathkgp12
+- Twitter: https://x.com/viswanath_12

@@ -11,6 +11,7 @@ export class About extends React.Component {
           <h2>About Me</h2>
         </header>
         <article>
+          <h3 className="sr-only">Professional Summary</h3>
           <p>
             Staff Backend & Web3 Engineer with 9+ years of experience architecting resilient financial infrastructure, institutional custody systems, and high-throughput microservices handling $40M+ in monthly volume. 
             <br/><br/>
