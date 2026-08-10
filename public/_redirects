@@ -1,0 +1,3 @@
+# Redirect www to non-www
+# Note: If using a custom domain, replace viswanathkgp12.netlify.app with your domain
+https://www.viswanathkgp12.netlify.app/* https://viswanathkgp12.netlify.app/:splat 301!

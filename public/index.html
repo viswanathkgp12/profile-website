@@ -74,10 +74,35 @@
       ]
     }
   </script>
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  
+  <!-- Semantic HTML for SEO Crawlers -->
+  <header class="sr-only">
+    <h1>Viswanath Kapavarapu | Lead Backend Engineer</h1>
+    <h2>Professional Portfolio & Resume</h2>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/#about">About Me</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
   <div id="root"></div>
   <!--
       This HTML file is a template.
